@@ -13,6 +13,8 @@ import { MenuComponent } from './menu/menu.component';
     BrowserModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent,
+    MenuComponent
+  ]
 })
 export class AppModule { }
