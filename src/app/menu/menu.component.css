@@ -32,7 +32,7 @@
 .navbar .menu li:last-child{
   margin-right: 0;
 }
-
+/* */
 .navbar .menu li a {
   color: #fff;
   text-transform: uppercase;
