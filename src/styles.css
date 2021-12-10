@@ -6,10 +6,24 @@
   padding: 0;
   font-family: 'Montserrat', sans-serif;
 }
+
+html{
+  min-height: 100%;
+  position: relative;
+}
 .container {
   width: 100%;
   max-width: 1140px;
   margin: 0 auto;
   position: relative;
   padding: 0 20px;
+}
+.only-mobile{
+  display: none;
+}
+
+@media (max-width :768px) {
+  .only-mobile{
+    display: block;
+  }
 }

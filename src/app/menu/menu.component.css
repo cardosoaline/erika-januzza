@@ -4,7 +4,7 @@
 .navbar {
   background-color: #141414;
   padding: 30px 0; /* primeiro em cima e embaixo e segundo esquerda direita */
-
+  box-shadow: 1px 1px 20px #ccc;
 }
 
 .navbar .container {
@@ -17,7 +17,6 @@
    color: #fff;
    font-size: 36px;
    font-family: 'Lily Script One', cursive;
-
 }
 
 .navbar .menu {
@@ -26,15 +25,42 @@
 
 .navbar .menu li {
   display:inline ;
-  margin: 0 15px;
+
 }
 
-.navbar .menu li:last-child{
-  margin-right: 0;
-}
 /* */
 .navbar .menu li a {
   color: #fff;
   text-transform: uppercase;
   text-decoration: none;
+  padding: 15px;
+  transition: 1s;
 }
+
+.navbar .menu li a:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+/*  @media serve para responsividade no mobile*/
+@media (max-width: 768px) {
+  .navbar .container{
+    flex-direction: column ;
+  }
+
+  .navbar .logo{
+    margin-bottom: 20px;
+  }
+}
+
+  @media (max-width: 400px) {
+    .navbar .menu li{
+      display: block;
+    }
+
+    .navbar .menu li a{
+      display: block;
+      text-align: center;
+      width: 100%;
+    }
+  }
